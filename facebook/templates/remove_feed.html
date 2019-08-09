@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="form_box">
+        <form method="POST">
+            {% csrf_token %}
+            <h3>{{ feed.title }} - 삭제하기</h3>
+            <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
+            <button class="write_button">삭제</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
